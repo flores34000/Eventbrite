@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+
+
+<h2>Tu as perdu ton mot de passe ?</h2>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :email %><br/>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+<br/>
+  <div class="actions">
+    <%= f.submit "Valider" %>
+  </div>
+<% end %>
+<br/>
+<%= render "devise/shared/links" %>
+</div>
+</div>
+</div>

@@ -7,13 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-User.destroy_all
+#User.destroy_all
 
-10.times do
-  User.create(
-    first_name: Faker::Name.first_name,
-    last_name: Faker::Name.last_name,
-    description: Faker::Lorem.paragraph(rand(1..50)),
-    email: "#{Faker::Name.first_name}@yopmail.com"
-  )
-end
+#20.times do
+ # User.create(
+  #  first_name: Faker::Name.first_name,
+   # last_name: Faker::Name.last_name,
+    #description: Faker::Lorem.paragraph,
+    #email: "#{Faker::Name.first_name}@yopmail.com"
+ # )
+#end
+
